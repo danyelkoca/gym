@@ -1,4 +1,4 @@
 numpy  # For numerical operations (NEAT core)
 networkx  # For visualizing neural network graphs
 matplotlib  # For plotting and saving PNG images
-imageio>=2.9
+imageio

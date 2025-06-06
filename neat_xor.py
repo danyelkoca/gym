@@ -1,8 +1,9 @@
 import numpy as np
-import random
-import os
+import json
 import logging
 import networkx as nx
+import random
+import os
 
 logging.basicConfig(level=logging.INFO, format='%(message)s', force=True)
 
@@ -266,7 +267,6 @@ def evaluate_fitness(genome):
     return genome.fitness
 
 def run_neat(generations=100, pop_size=200):
-    import json
     os.makedirs('output', exist_ok=True)
     population = [Genome(2, 1) for _ in range(pop_size)]
     species_list = []

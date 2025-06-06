@@ -6,7 +6,6 @@ import imageio
 import numpy as np
 import matplotlib.pyplot as plt
 import networkx as nx
-from PIL import Image
 from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 import logging
 

@@ -1,36 +1,25 @@
 # NEAT XOR Visualization
 
-This project implements a minimal, extensible NEAT (NeuroEvolution of Augmenting Topologies) algorithm in Python (NumPy) for solving the XOR problem. It features modular code, robust logging, and visualization of the evolving neural network and fitness progress.
-
-## Features
-
-- NEAT algorithm for XOR
-- Cycle prevention and robust crossover
-- Visualization of the evolving network and fitness curve
-- GIF and video (MP4) export of the evolution process
-- All metadata for visualization is saved to `output/progress.json`
+This project implements a minimal NEAT (NeuroEvolution of Augmenting Topologies) algorithm in Python (NumPy) for solving the XOR problem, with visualization of the evolving neural network and fitness progress.
 
 ## Usage
 
-1. **Run NEAT and log progress:**
+1. Run NEAT and log progress:
 
    ```sh
    python neat_xor.py
    ```
 
-   This will generate `output/progress.json` with all metadata for visualization.
+   This generates `output/progress.json`.
 
-2. **Create a GIF or video of the evolution:**
+2. Create a GIF of the evolution:
 
    ```sh
    python make_gif.py --metadata_path output/progress.json --gif_path output/progress.gif --duration_ms 60000
-   # Or to save as video:
-   python make_gif.py --metadata_path output/progress.json --gif_path output/progress.mp4 --duration_ms 60000
    ```
 
-3. **View the result:**
+3. View the result:
    - The GIF will be saved as [`output/progress.gif`](output/progress.gif).
-   - The video (if chosen) will be saved as `output/progress.mp4`.
 
 ## Example Output
 
@@ -42,7 +31,7 @@ This project implements a minimal, extensible NEAT (NeuroEvolution of Augmenting
 - numpy
 - networkx
 - matplotlib
-- imageio>=2.9
+- imageio
 
 Install dependencies with:
 
@@ -52,7 +41,7 @@ pip install -r requirements.txt
 
 ## Notes
 
-- If the GIF plays too fast in your viewer, try using a video format (MP4) or use a tool like `gifsicle` to adjust the frame delay.
+- If the GIF plays too fast in your viewer, try using a tool like `gifsicle` to adjust the frame delay.
 - The code is modular and can be extended for other NEAT experiments.
 
 ---
