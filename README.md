@@ -1,6 +1,10 @@
-# NEAT XOR Visualization
+# NEAT XOR
 
-This project implements a minimal NEAT (NeuroEvolution of Augmenting Topologies) algorithm in Python (NumPy) for solving the XOR problem, with visualization of the evolving neural network and fitness progress.
+<p align="center">
+  <img src="output/progress.gif" alt="NEAT XOR Evolution GIF" style="max-width:100%;" loop>
+</p>
+
+This project implements a minimal NEAT (NeuroEvolution of Augmenting Topologies) algorithm in Python (NumPy) for solving the XOR problem, with logging and GIF visualization of the evolving neural network and fitness progress.
 
 ## Usage
 
@@ -20,10 +24,6 @@ This project implements a minimal NEAT (NeuroEvolution of Augmenting Topologies)
 
 3. View the result:
    - The GIF will be saved as [`output/progress.gif`](output/progress.gif).
-
-## Example Output
-
-![NEAT XOR Evolution GIF](output/progress.gif)
 
 ## Requirements
 
