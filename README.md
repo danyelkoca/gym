@@ -27,7 +27,7 @@ This project implements a minimal NEAT (NeuroEvolution of Augmenting Topologies)
 
 ## Requirements
 
-- Python 3.7+
+- Python
 - numpy
 - networkx
 - matplotlib
@@ -38,12 +38,3 @@ Install dependencies with:
 ```sh
 pip install -r requirements.txt
 ```
-
-## Notes
-
-- If the GIF plays too fast in your viewer, try using a tool like `gifsicle` to adjust the frame delay.
-- The code is modular and can be extended for other NEAT experiments.
-
----
-
-Created by [Your Name]
