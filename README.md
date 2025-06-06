@@ -19,7 +19,7 @@ This project implements a minimal NEAT (NeuroEvolution of Augmenting Topologies)
 2. Create a GIF of the evolution:
 
    ```sh
-   python make_gif.py --metadata_path output/progress.json --gif_path output/progress.gif --duration_ms 60000
+   python make_gif.py
    ```
 
 3. View the result:
