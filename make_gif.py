@@ -241,7 +241,7 @@ def make_gif_from_metadata(
         return
     duration_sec = duration_ms / 1000.0
     per_frame_duration = duration_sec / n_frames
-    imageio.mimsave(gif_path, images, duration=per_frame_duration)
+    imageio.mimsave(gif_path, images, duration=per_frame_duration, loop=0)
     print(f"GIF saved to {gif_path} (duration per frame: {per_frame_duration:.3f}s, total: {duration_sec:.2f}s, frames: {n_frames})")
 
 if __name__ == "__main__":
